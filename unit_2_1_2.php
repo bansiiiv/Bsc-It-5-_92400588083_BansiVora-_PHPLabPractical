@@ -6,29 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-<?php
+    <?php
+        $months = array(
+        "January" => 31,
+        "February" => 28,
+        "March" => 31,
+        "April" => 30,
+        "May" => 31,
+        "June" => 30,
+        "July" => 31,
+        "August" => 31,
+        "September" => 30,
+        "October" => 31,
+        "November" => 30,
+        "December" => 31
+        ); 
 
-$monthsAndDays = [
-    "Jan" => 31,
-    "Feb" => 28, // 29 in a leap year
-    "Mar" => 31,
-    "Apr" => 30,
-    "May" => 31,
-    "Jun" => 30,
-    "Jul" => 31,
-    "Aug" => 31,
-    "Sep" => 30,
-    "Oct" => 31,
-    "Nov" => 30,
-    "Dec" => 31
-];
-
-
-
-echo "\n Associative Array (Months) \n</br>";
-print_r($monthsAndDays);
-
-
-?>
+        foreach($months as $m => $name){
+        echo $m . "=" . $name ."</br>";
+        }
+    ?>
 </body>
 </html>
