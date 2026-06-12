@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,16 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-
-    $daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    
-    echo " Numeric Array (Days) \n</br>";
-    print_r($daysOfWeek);
-    
+    <?php
+        $days = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        foreach($days as $d){
+            echo $d . "</br>";
+        }
     ?>
 </body>
 </html>
-    
-    
-  
