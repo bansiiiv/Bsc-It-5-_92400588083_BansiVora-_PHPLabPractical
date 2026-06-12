@@ -7,33 +7,20 @@
 </head>
 <body>
     <?php
-    $laptops = [
-        "Apple" => [
-            [
-                "model" => "MacBook Air M3",
-                "price" => 113000
-            ],
-            [
-                "model" => "MacBook Pro 16-inch",
-                "price" => 124990
-            ]
-        ],
-        "Dell" => [
-            [
-                "model" => "XPS 13",
-                "price" => 98999
-            ],
-            [
-                "model" => "Alienware m16",
-                "price" => 88999
-            ]
-        ]
-    ];
-    
- 
-    
-    echo "\n Multidimensional Array (Laptops) \n</br>";
-    print_r($laptops);
+       $laptops = array(
+        array("Dell", "Inspiron 15", 50000),
+        array("HP", "Pavilion 14", 55000)
+    );
+        for($row=0;$row<2;$row++)
+        {
+            for($col=0;$col<3;$col++)
+            {
+                echo $laptops[$row][$col]."</br>";
+            }
+                echo "</br>";
+        }
+
+        
     ?>
 </body>
 </html>
